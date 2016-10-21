@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sotaltim - Contacto</title>
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    
+    
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="css/estilo.css" type="text/css"/>
+    
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <!--<link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection">    -->
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<header id="header">
+		<figure class="logo">
+			<img src="img/logo.png" alt="">
+		</figure>
+		<nav>
+			<ul id="navegador">
+				<a href="index.html"><li>Inicio</li></a>
+				<a href="empresa.html"><li>Empresa</li></a>
+				<a href="soluciones.html"><li>Soluciones</li></a>
+				<a href="equipo.html"><li>Equipo</li></a>
+				<a href="contacto.html"><li class="ancla">Contacto</li></a>
+			</ul>
+		</nav>
+	</header>
+	<div class="fijo">
+		<div class="fijoImg fijoImg4"></div>
+	</div>
+	<section class="contenido background">
+		<article class="nosotros">
+			<h1>Sotaltim S.p.A</h1>
+
+			<p>+569 9155 6416</p>
+			<a class="correo" href="mailto:equipo@sotaltim.cl">equipo@sotaltim.cl</a>
+			<p>Avenida Los Placeres 206, oficina 506, Valparaíso.</p>
+		</article>
+		<article class="contacto">
+			<section class="formulariom">      
+			    <form method="post" >
+			        <input name="name" placeholder="Nombre">
+			                
+			        <input name="email" type="email" placeholder="Correo">
+			                
+			        <textarea name="message" placeholder="Escribe un Mensaje"></textarea>
+
+			        <input id="submit" placeholder="Submit" name="submit" type="submit" value="Enviar">
+			            
+			    </form>
+			</section>
+			<div class="script">
+				<?php
+					$name = $_POST['name'];
+					$email = $_POST['email'];
+					$message = $_POST['message'];
+					$from = 'From: Test de correo'; 
+					$to = 'equipo@sotaltim.cl';//colocar un correo
+					$subject = 'Contacto';
+					$human = $_POST['human'];
+
+					$formulariom = "From: $name\n E-Mail: $email\n Message:\n $message";
+
+					if ($_POST['submit']) {
+						if ($name != '' && $email != '') {
+							if ($human == '') {         
+								if (mail ($to, $subject, $formulariom, $from)) { 
+									echo '<p>El mensaje fue enviado!</p>';
+								} else { 
+								echo '<p>Inténtalo otra vez!</p>'; 
+								} 
+							} else if ($_POST['submit'] && $human != '') {
+								echo '<p>Tienes que colocar el número correcto!</p>';
+							}
+						} else {
+							echo '<p>Campos necesarios!!</p>';
+						}
+					}
+				?>
+			</div>
+		</article>
+	</section>
+	
+	<footer>
+		<div class="frase align">
+			<h2>Soluciones Tecnológicas de Alto Impacto</h2>
+		</div>
+		<div class="numeros align">
+			<div class="marginNum">
+				<figure class="align">
+					<img class="align" src="img/mail.png" alt="">
+					<figcaption class="align">equipo@sotaltim.cl</figcaption>
+				</figure>
+				<figure class="align">
+					<img class="align" src="img/phone.png" alt="">
+					<figcaption class="align">+569 9155 6416</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="social align">
+			<div class="marginSocial">
+				<figure class="align">
+					<a href="https://www.facebook.com/sotaltim" target="_blank"><img src="img/facebook.png" alt=""></a>
+				</figure>
+				<figure class="align">
+					<a href="https://twitter.com/spyfirecl" target="_blank"><img src="img/twitter.png" alt=""></a>
+				</figure>
+				<figure class="align">
+					<a href="https://www.youtube.com/channel/UCsgfddVSBo_CBX6UpILgXtQ" target="_blank"><img src="img/youtube.png" alt=""></a>
+				</figure>
+				<figure class="align">
+					<a href="https://vimeo.com/user27411580" target="_blank"><img src="img/vimeo.png" alt=""></a>
+				</figure>
+			</div>
+		</div>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>

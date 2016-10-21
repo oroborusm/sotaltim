@@ -1,0 +1,851 @@
+@import 'nib'
+@import 'nib/gradients'
+@import url("../font/stylesheet.css")
+
+azulado = #003767
+celeste = #2d72fc
+plomito = #EEE
+plomo = #999
+verde = #197A65
+naranjo = #ed6a00
+amarillo = #dca817
+.correo
+	color #666
+
+body
+	background plomito
+	font-family: 'Open Sans', sans-serif;
+	font-size 18px
+	footer
+		color azulado
+		background #B2C3D0
+		font-family 'sansationregular'
+		margin 2em 0 0 0
+		padding 4em 0
+		width 100%
+		.frase
+		.numeros
+		.social
+			margin 0 auto
+			height 3em
+			position relative
+			text-align center
+		.frase
+			border-right 1px solid azulado
+			width 35%
+			h2
+				font-size 18px
+				margin 0 1em
+				padding .5em 0
+		.numeros
+			border-right 1px solid azulado
+			width 35%
+			.marginNum
+				margin 0 0 0 1em
+				figure
+					cursor pointer
+					margin .3em auto
+					width 210px
+					&:hover
+						opacity .5
+					img
+						width 40px
+		.social
+			width 24%
+			.marginSocial
+				margin 0 auto
+				position relative
+				width 180px
+				figure
+					cursor pointer
+					height 40px
+					margin 0 auto
+					width 40px
+					&:hover
+						opacity .5
+					img
+						width 100%
+	header
+		background rgba(plomito, .8) !important
+		background plomito
+		border-bottom solid 1px azulado
+		box-shadow 0 0 10px black
+		height 5em
+		overflow hidden
+		padding 0
+		position fixed
+		top 0
+		width 100%
+		z-index 10
+		nav
+			float left
+			ul
+				margin 0 1em
+				padding 1em 0
+				.ancla
+					border-bottom 2px solid azulado
+				li 
+					color #666
+					display inline-block
+					font-size .8em
+					font-weight 700
+					margin .5em
+					padding .7em 0
+					&:hover
+						border-bottom 2px solid azulado
+						color azulado
+		nav
+		figure
+			display inline-block
+			vertical-align middle
+		figure
+			float right
+			margin 0 1em 0 0
+			padding 0
+			img
+				height 86px
+				width 110px
+	.envoltura
+		margin-top 1em
+		box-shadow 0 0 10px #CCC
+	.confian
+		margin-top 1em
+		box-shadow 0 0 10px #CCC
+		text-align center
+		article
+			margin 0
+			padding 0
+			width 100%
+			h2
+				color azulado
+				font-family 'sansationregular'
+				font-size 1.1em
+				margin 1em 0 2em 0
+			figure
+				img
+					cursor pointer
+					filter grayscale(1)
+					-webkit-filter grayscale(1)
+					display inline-block
+					margin 1em
+					transition .5s
+					width 100px
+					&:hover
+						filter grayscale(0)
+						-webkit-filter grayscale(0)
+		.corfo
+			margin 0
+			padding 0
+			width 100%
+			figure
+				img
+					cursor pointer
+					filter grayscale(1)
+					-webkit-filter grayscale(1)
+					display inline-block
+					margin 1em 0
+					transition .5s
+					width 250px
+					&:hover
+						filter grayscale(0)
+						-webkit-filter grayscale(0)
+	.ib-container
+		max-width 1140px
+	section
+		display block
+		margin 0 auto
+		overflow hidden
+		position relative
+		transition .4s
+		width 80%
+		article
+		.test
+			box-shadow 0.4s ease-in-out
+			display inline-block
+			transform 0.4s ease-in-out
+			vertical-align top
+			width 24%
+			.equipaso
+				display inline-block
+				margin 1em auto
+				overflow hidden
+				text-align center
+				vertical-align top
+				&:hover
+					transition .5s
+					.info
+						h3
+							transition .5s
+							color azulado
+				.equipasoImg
+					opacity 1
+					transition .3s
+					img
+						display block
+						margin 0 auto
+						width 80%
+				.info
+					width 100%
+					h3
+						font-family 'sansationregular'
+						margin 1em 0 0 0
+					p
+						color #666
+						font-size .7em
+						margin 0
+					span
+						color #666
+						font-size .7em
+						font-style italic
+		article.blur
+			transform scale(0.98)
+			opacity 0.7
+			.equipaso
+				opacity 0.7
+				.equipasoImg
+					box-shadow 0px 0px 20px 10px rgba(255,255,255,1)
+					opacity 0.7
+					img
+						box-shadow 0px 0px 20px 10px rgba(255,255,255,1)
+						opacity 0.7
+				.info
+					box-shadow 0px 0px 20px 10px rgba(255,255,255,1)
+					opacity 0.7
+					h3
+					p
+					span
+						box-shadow 0px 0px 20px 10px rgba(255,255,255,1)
+						opacity 0.5
+						text-shadow 0px 0px 0px rgba(0, 0, 0, 1)
+		.bu1
+			background rgba(verde, .5)
+		.bu2
+			background rgba(naranjo, .5)
+		.bu3
+			background rgba(amarillo, .5)
+		.contacto
+			float right
+			margin 3em auto
+			width 50%
+			.formulariom
+				margin 0 auto
+				width 100%
+				form
+					display block
+					margin 0 auto
+					padding 0
+					overflow hidden
+					input
+					textarea
+						background rgba(85,86,90, .25)
+						border none
+						color white
+						font-family 'sansationregular'
+						font-size 0.9em
+						font-weight 300
+						height 27px
+						margin-top .4em
+						width 100%
+					textarea
+						height 213px
+						width 100%
+					input:focus
+					textarea:focus
+						border 1px solid azulado inset
+					#submit
+						color #EEE
+						background azulado
+						border none
+						cursor pointer
+						float right
+						height 38px
+						margin-top 20px
+						width 6em
+						&:hover
+							opacity .6
+		.contenedor
+			margin 2em 0
+			display block
+			text-align center
+			width 100%
+			ul
+				margin 0
+				padding 0
+				.soluli
+					display inline-block
+					margin 20px
+					width 100%
+					.mas
+						height 200px
+						margin 20px
+						width 200px
+						.sombrita1
+							box-shadow inset 0 0 0 16px rgba(verde, .5)
+						.sombrita2
+							box-shadow inset 0 0 0 16px rgba(naranjo, .5)
+						.sombrita3
+							box-shadow inset 0 0 0 16px rgba(amarillo, .5)
+						.ciritem
+							border-radius 50%
+							cursor default
+							height 100%
+							position relative
+							transition all 0.4s ease-in-out
+							width 100%
+							&:before
+								content ''
+							    display table
+							&:hover
+								box-shadow inset 0 0 0 1px 
+					.mas
+					.reseña
+						display inline-block
+						position relative
+						vertical-align middle
+					.reseña
+						margin 0 0 0 1em
+						padding 1em
+						text-align justify
+						width 60%
+						p
+							font-size .8em
+							width 100%
+							span
+								color #666
+								font-size 1.2em
+								font-weight bold
+					.cirimg-1
+						background-image url("../img/climate.jpg")
+						background-size cover
+						background-position center
+					.cirimg-2
+						background-image url("../img/fire.jpg")
+						background-size cover
+						background-position center
+					.cirimg-3
+						background-image url("../img/beer.jpg")
+						background-size cover
+						background-position center
+		.nosotros
+			margin 3em auto 1em 1em
+			float left
+			font-family 'sansationregular'
+			text-align left
+			width 45%
+			h1
+				color azulado
+				font-size 1.1em
+				font-family "sansationbold"
+				margin-bottom 1.3em
+			p
+				color #666
+				margin .4em 0
+				font-size .9em
+				font-weight 300
+		.fuera
+			border-radius .5em
+			display none
+			margin 0 auto
+			padding 1em
+			position fixed
+			top 9.3em
+			width 80%
+			z-index 20
+			.otroCont
+				margin 0 auto
+				width 80%
+				.cajaVid
+					margin 0 auto
+					position relative
+					width 70%
+					.cobertor
+						height 110%
+						position absolute
+						width 100%
+						z-index 5
+						img
+							cursor pointer
+							width 100%
+					.granVid
+						display block
+						width 100%
+						.contieneVid
+							height 0
+							opacity 0
+							overflow hidden
+							padding-bottom 56.25%
+							padding-top 30px
+							position relative
+							width 100%
+							iframe
+								height 90%
+								left 0
+								margin 0
+								padding 0
+								position absolute
+								top 0
+								width 100%
+				.volver
+					cursor pointer
+					display block
+					text-align center
+					width 100%
+					img
+						margin 0
+						opacity .5
+						width 50px
+						&:hover
+							opacity .8
+		.historia
+			float right
+			margin 1em 1em 0 0
+			width 50%
+			h2
+				color azulado
+				font-size 1.1em
+			p
+				font-size .9em
+				text-align justify
+
+		.historia
+		.mision
+			padding 0
+		.mision
+			float left
+			margin 1em 0 0 1em
+			width 40%
+			figure
+				padding 0
+				margin 0 0 2em 0
+				width 100%
+				img
+					display block
+					margin 0 auto
+					width 200px
+			h2
+				color azulado
+				font-size 1.1em
+			p
+				font-size .9em
+				margin 0 auto
+				text-align justify
+		
+	.align
+		display inline-block
+		vertical-align middle
+	.azul
+		color azulado
+	.carrusel
+		height 700px
+		position relative
+		width 100%
+		#headerimgs
+			width 100%
+			.headerimg
+				background-position center top
+				background-repeat no-repeat
+				width 100%
+				height 700px
+				position absolute
+		#headernav-outer
+			margin 0px auto
+			height 1.5em
+			width 150px
+			position relative
+			top 29em
+			z-index 2
+			#headernav
+				width 150px
+				position relative
+				margin 0 auto
+				#back
+					background-image url("../img/carrusel/left.png")
+					background-size 100%
+					float left
+					opacity .6
+					&:hover
+						opacity 1
+				#control
+					background-image url("../img/carrusel/pausa.png")
+					background-size 100%
+					float left
+					margin 0 15px
+					opacity .6
+					&:hover
+						opacity 1
+				#next
+					background-image url("../img/carrusel/rigth.png")
+					background-size 100%
+					float right
+					opacity .6
+					&:hover
+						opacity 1
+				.btn
+					cursor pointer
+					display inline-block
+					height 40px
+					width 40px
+		#headertxt
+			margin 0 auto
+			position relative
+			top 9em
+			width 65%
+			#firstline
+				background-color rgba(black, .6)
+				border-radius .5em
+				box-shadow 0 0 10px black
+				color white
+				display block
+				font-family 'sansationregular'
+				font-size 1.3em
+				margin 0 auto
+				overflow hidden
+				padding 3em .9em
+				position absolute
+				text-align center
+				text-shadow 0 0 10px black
+				top 0px
+				width 100%
+				p
+					margin 0
+					padding 0
+				span
+					font-size 1.4em
+					margin 0
+					padding 0
+	.fijo
+		height 270px
+		width 100%
+		.fijoImg
+			background-attachment fixed
+			background-position center top
+			background-repeat no-repeat
+			display block
+			height 100%
+			width 100%
+		.fijoImg1
+			background-image url('../img/fonditoempresa.jpg')
+		.fijoImg2
+			background-image url('../img/fonditosolu.jpg')
+		.fijoImg3
+			background-image url('../img/fonditoequi.jpg')
+		.fijoImg4
+			background-image url('../img/fonditocontac.jpg')
+	.sensation
+		font-family 'sansationregular'
+.background
+	box-shadow 0 0 10px #999		
+	margin 1em auto
+	padding 2em 4em
+.color1
+	background rgba(verde, .7)
+.color2
+	background rgba(naranjo, .7)
+.color3
+	background rgba(amarillo , .7)
+
+.cirinfo
+	backface-visibility hidden
+	border-radius 50%
+	height inherit
+	opacity 0
+	position absolute
+	transform scale(0)
+	transition all 0.4s ease-in-out
+	width inherit
+	h3
+		color #fff
+		font-family: 'sansationregular'
+		font-size 22px
+		letter-spacing 2px
+		margin 4em auto 0 auto
+		padding 0
+		text-shadow 0 1px 2px rgba(0,0,0,0.3)
+	p
+		border-top 1px solid rgba(255,255,255,0.5)
+		color #fff
+		cursor pointer
+		font-size .9em
+		font-style italic
+		margin 0 30px
+		opacity 0
+		padding 0
+		&:hover
+			color rgba(azulado, 0.8)
+.cirinfo2
+	backface-visibility hidden
+	border-radius 50%
+	height inherit
+	opacity 0
+	position absolute
+	transform scale(0)
+	transition all 0.4s ease-in-out
+	width inherit
+	h3
+		color #fff
+		font-family: 'sansationregular'
+		font-size 1em
+		letter-spacing 2px
+		margin 3em auto 0 auto
+		padding 0
+		text-shadow 0 1px 2px rgba(0,0,0,0.3)
+		text-transform uppercase
+	p
+		border-top 1px solid rgba(255,255,255,0.5)
+		color #fff
+		cursor pointer
+		font-size .9em
+		font-style italic
+		margin 0 30px
+		opacity 0
+		padding 0
+		&:hover
+			color rgba(azulado, 0.8)
+
+.ciritem:hover .cirinfo
+	opacity 1
+	transform scale(1)
+
+.ciritem:hover .cirinfo p
+	opacity: 1
+.ciritem:hover .cirinfo2
+	opacity 1
+	transform scale(1)
+.ciritem:hover .cirinfo2 p
+	opacity: 1s
+.foto1
+	background-image url("../img/equipo/foto1.png")
+	background-size 100%
+	background-position 0 30%
+.foto2
+	background-image url("../img/equipo/foto2.png")
+	background-size 100%
+	background-position 0 30%
+.foto3
+	background-image url("../img/equipo/foto3.png")
+	background-size 100%
+	background-position 0 30%
+.foto4
+	background-image url("../img/equipo/foto4.png")
+	background-size 100%
+	background-position 0 30%
+.foto5
+	background-image url("../img/equipo/foto5.png")
+	background-size 100%
+	background-position 0 30%
+.foto6
+	background-image url("../img/equipo/foto6.png")
+	background-size 100%
+	background-position 0 30%
+.foto7
+	background-image url("../img/equipo/foto7.png")
+	background-size 100%
+	background-position 0 30%
+.foto8
+	background-image url("../img/equipo/foto8.png")
+	background-size 100%
+	background-position 0 30%
+.foto9
+	background-image url("../img/equipo/foto9.png")
+	background-size 100%
+	background-position 0 30%
+.foto10
+	background-image url("../img/equipo/foto10.png")
+	background-size 100%
+	background-position 0 30%
+.foto11
+	background-image url("../img/equipo/foto11.png")
+	background-size 100%
+	background-position 0 30%
+.foto12
+	background-image url("../img/equipo/foto12.png")
+	background-size 100%
+	background-position 0 30%
+.foto13
+	background-image url("../img/equipo/foto13.png")
+	background-size 100%
+	background-position 0 30%
+.script
+	display none
+::-webkit-input-placeholder{
+   color: white;
+   margin-left: 1em;
+}
+:-moz-placeholder{
+   color: white;
+   margin-left: 1em;
+}
+::-moz-placeholder{
+   color: white;
+   margin-left: 1em;
+}
+:-ms-input-placeholder {  
+   color: white;
+   margin-left: 1em;
+}
+
+@media (min-width: 1500px)
+	body
+		section
+			#headerimgs
+				.headerimg
+					background-size 100%
+		.fijo
+			.fijoImg1
+				background-image url('../img/fonditoempresa.jpg')
+				background-size 100%
+			.fijoImg2
+				background-image url('../img/fonditosolu.jpg')
+				background-size 100%
+			.fijoImg3
+				background-image url('../img/fonditoequi.jpg')
+				background-size 100%
+			.fijoImg4
+				background-image url('../img/fonditocontac.jpg')
+				background-size 100%
+
+@media (max-width: 720px)
+	body
+		header
+			overflow visible
+			nav
+				background rgba(plomito, .9)
+				margin 0 auto
+				width 100%
+				ul
+					margin 0
+					padding 0
+					li 
+						text-align center
+						width 13%
+			figure
+				display block
+				float none
+				margin 0 auto
+				width 110px
+		.envoltura
+			margin-top 0
+			box-shadow none
+		section
+			.historia
+			.mision
+				float none
+				margin 0
+				padding 2em 0
+				width 100%
+				figure
+					img
+						display block
+						margin 0 auto
+						width 200px
+			.fuera
+				padding .5em 0
+				.otroCont
+					.volver
+						img
+							margin-left .2em
+							width 30px
+					figure
+						display none
+					.cajaVid
+						margin 0
+						width 100%
+			.test
+				width 49%
+			.nosotros
+				display block
+				margin 3em auto
+				float none
+				text-align center
+				width 100%
+				h1
+					margin-bottom 0
+			.contacto
+				float none
+				margin 3em auto
+				width 100%
+		.background
+			box-shadow none		
+			margin 0 auto
+			padding 0
+
+@media (max-width: 650px)
+	body
+		footer
+			.frase
+			.numeros
+			.social
+				border-right none
+				display block
+				text-align center
+				width 100%
+				h2
+					margin 0 auto
+				.marginNum
+				.marginSocial
+					margin 1em auto
+		section
+			.contenedor
+				.cirGrilla
+					li
+						margin 0
+						padding 0
+						.reseña
+							margin 0 auto
+							padding 0
+							width 100%
+@media (max-width: 520px)
+	body
+		header
+			nav
+				ul
+					li 
+						margin 0
+						text-align center
+						width 32%
+		.carrusel
+			#headertxt
+				width 100%
+				#firstline
+					border-radius 0
+					padding 2em 0
+@media (max-width: 450px)
+	body
+		.confian
+			box-shadow none
+			width 100%
+		footer
+			.social
+				.marginSocial
+					margin 4em auto
+		section
+			.contenedor
+				ul
+					margin 0
+					padding 0
+					.soluli
+						.mas
+							height 150px
+							margin 0 auto
+							width 150px
+	.cirinfo
+		h3
+			margin 2.3em auto 0 auto
+@media (max-width: 320px)
+	body
+		.carrusel
+			#headertxt
+				#firstline
+					font-size 1em
+		.confian
+			article
+				figure
+					img
+						width 50%
+			.corfo
+				figure
+					img
+						width 100%
+		section
+			.test
+				width 100%
